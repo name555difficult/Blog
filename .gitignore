@@ -1,0 +1,25 @@
+# 忽略obsidian配置目录
+.obsidian/
+
+# 忽略"阅读"目录1
+阅读/
+
+# 忽略视频文件
+*.mp4
+*.mkv
+
+# 忽略pdf等办公文件
+*.pdf
+*.ppt
+*.pptx
+*.doc
+*.docx
+*.xlsx
+*.csv
+
+# Ignore files larger than 50MB
+*.rar
+*.zip
+*.tar.gz
+*.iso
+*.dmg
