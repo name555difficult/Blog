@@ -1,5 +1,7 @@
 # Q-REG
 
+**2023-09-27 airxiv preprint**
+
 >  Jin, S., Barath, D., Pollefeys, M., & Armeni, I. (2023). Q-REG: End-to-End Trainable Point Cloud Registration with Surface Curvature.
 
 - paper: [2309.16023v1\] Q-REG: End-to-End Trainable Point Cloud Registration with Surface Curvature (arxiv.org)](https://arxiv.org/abs/2309.16023v1)
