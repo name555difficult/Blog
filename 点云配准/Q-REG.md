@@ -2,7 +2,129 @@
 
 >  Jin, S., Barath, D., Pollefeys, M., & Armeni, I. (2023). Q-REG: End-to-End Trainable Point Cloud Registration with Surface Curvature.
 
-## 
+- paper: [2309.16023v1\] Q-REG: End-to-End Trainable Point Cloud Registration with Surface Curvature (arxiv.org)](https://arxiv.org/abs/2309.16023v1)
+- code: waiting
 
-1. 
-2. RANSAC-like estimation methods cope with the combinatorics of the problem via **selecting random subsets of m correspondences**( e.g., m=3 for rigid pose estimation). this allows to progressively explore the ![img](data:image/svg+xml;utf8,%3Csvg%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20width%3D%224.686ex%22%20height%3D%224.676ex%22%20style%3D%22vertical-align%3A%20-1.838ex%3B%22%20viewBox%3D%220%20-1221.9%202017.5%202013.3%22%20role%3D%22img%22%20focusable%3D%22false%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20aria-labelledby%3D%22MathJax-SVG-1-Title%22%3E%0A%3Ctitle%20id%3D%22MathJax-SVG-1-Title%22%3EEquation%3C%2Ftitle%3E%0A%3Cdefs%20aria-hidden%3D%22true%22%3E%0A%3Cpath%20stroke-width%3D%221%22%20id%3D%22E1-MJMAIN-28%22%20d%3D%22M94%20250Q94%20319%20104%20381T127%20488T164%20576T202%20643T244%20695T277%20729T302%20750H315H319Q333%20750%20333%20741Q333%20738%20316%20720T275%20667T226%20581T184%20443T167%20250T184%2058T225%20-81T274%20-167T316%20-220T333%20-241Q333%20-250%20318%20-250H315H302L274%20-226Q180%20-141%20137%20-14T94%20250Z%22%3E%3C%2Fpath%3E%0A%3Cpath%20stroke-width%3D%221%22%20id%3D%22E1-MJMATHI-6E%22%20d%3D%22M21%20287Q22%20293%2024%20303T36%20341T56%20388T89%20425T135%20442Q171%20442%20195%20424T225%20390T231%20369Q231%20367%20232%20367L243%20378Q304%20442%20382%20442Q436%20442%20469%20415T503%20336T465%20179T427%2052Q427%2026%20444%2026Q450%2026%20453%2027Q482%2032%20505%2065T540%20145Q542%20153%20560%20153Q580%20153%20580%20145Q580%20144%20576%20130Q568%20101%20554%2073T508%2017T439%20-10Q392%20-10%20371%2017T350%2073Q350%2092%20386%20193T423%20345Q423%20404%20379%20404H374Q288%20404%20229%20303L222%20291L189%20157Q156%2026%20151%2016Q138%20-11%20108%20-11Q95%20-11%2087%20-5T76%207T74%2017Q74%2030%20112%20180T152%20343Q153%20348%20153%20366Q153%20405%20129%20405Q91%20405%2066%20305Q60%20285%2060%20284Q58%20278%2041%20278H27Q21%20284%2021%20287Z%22%3E%3C%2Fpath%3E%0A%3Cpath%20stroke-width%3D%221%22%20id%3D%22E1-MJMATHI-6D%22%20d%3D%22M21%20287Q22%20293%2024%20303T36%20341T56%20388T88%20425T132%20442T175%20435T205%20417T221%20395T229%20376L231%20369Q231%20367%20232%20367L243%20378Q303%20442%20384%20442Q401%20442%20415%20440T441%20433T460%20423T475%20411T485%20398T493%20385T497%20373T500%20364T502%20357L510%20367Q573%20442%20659%20442Q713%20442%20746%20415T780%20336Q780%20285%20742%20178T704%2050Q705%2036%20709%2031T724%2026Q752%2026%20776%2056T815%20138Q818%20149%20821%20151T837%20153Q857%20153%20857%20145Q857%20144%20853%20130Q845%20101%20831%2073T785%2017T716%20-10Q669%20-10%20648%2017T627%2073Q627%2092%20663%20193T700%20345Q700%20404%20656%20404H651Q565%20404%20506%20303L499%20291L466%20157Q433%2026%20428%2016Q415%20-11%20385%20-11Q372%20-11%20364%20-4T353%208T350%2018Q350%2029%20384%20161L420%20307Q423%20322%20423%20345Q423%20404%20379%20404H374Q288%20404%20229%20303L222%20291L189%20157Q156%2026%20151%2016Q138%20-11%20108%20-11Q95%20-11%2087%20-5T76%207T74%2017Q74%2030%20112%20181Q151%20335%20151%20342Q154%20357%20154%20369Q154%20405%20129%20405Q107%20405%2092%20377T69%20316T57%20280Q55%20278%2041%20278H27Q21%20284%2021%20287Z%22%3E%3C%2Fpath%3E%0A%3Cpath%20stroke-width%3D%221%22%20id%3D%22E1-MJMAIN-29%22%20d%3D%22M60%20749L64%20750Q69%20750%2074%20750H86L114%20726Q208%20641%20251%20514T294%20250Q294%20182%20284%20119T261%2012T224%20-76T186%20-143T145%20-194T113%20-227T90%20-246Q87%20-249%2086%20-250H74Q66%20-250%2063%20-250T58%20-247T55%20-238Q56%20-237%2066%20-225Q221%20-64%20221%20250T66%20725Q56%20737%2055%20738Q55%20746%2060%20749Z%22%3E%3C%2Fpath%3E%0A%3C%2Fdefs%3E%0A%3Cg%20stroke%3D%22currentColor%22%20fill%3D%22currentColor%22%20stroke-width%3D%220%22%20transform%3D%22matrix(1%200%200%20-1%200%200)%22%20aria-hidden%3D%22true%22%3E%0A%20%3Cuse%20xlink%3Ahref%3D%22%23E1-MJMAIN-28%22%20x%3D%220%22%20y%3D%220%22%3E%3C%2Fuse%3E%0A%3Cg%20transform%3D%22translate(389%2C0)%22%3E%0A%3Cg%20transform%3D%22translate(120%2C0)%22%3E%0A%3Crect%20stroke%3D%22none%22%20width%3D%22998%22%20height%3D%2260%22%20x%3D%220%22%20y%3D%22220%22%3E%3C%2Frect%3E%0A%20%3Cuse%20xlink%3Ahref%3D%22%23E1-MJMATHI-6E%22%20x%3D%22199%22%20y%3D%22676%22%3E%3C%2Fuse%3E%0A%20%3Cuse%20xlink%3Ahref%3D%22%23E1-MJMATHI-6D%22%20x%3D%2260%22%20y%3D%22-686%22%3E%3C%2Fuse%3E%0A%3C%2Fg%3E%0A%3C%2Fg%3E%0A%20%3Cuse%20xlink%3Ahref%3D%22%23E1-MJMAIN-29%22%20x%3D%221628%22%20y%3D%220%22%3E%3C%2Fuse%3E%0A%3C%2Fg%3E%0A%3C%2Fsvg%3E)possible combinations, where n is the total number of matches. 
+![image-20231004212136582](https://img2023.cnblogs.com/blog/3251700/202310/3251700-20231004212154473-519023246.png)
+
+## Questions Raised
+
+1. RANSAC-like estimation methods cope with the combinatorics of the problem via **selecting random subsets of m correspondences**( e.g., m=3 for rigid pose estimation). this allows to progressively explore the $(\frac{n}{m})$ possible combinations, where n is the total number of matches. 
+
+简单来说就是RANSAC style不可微，不能end-to-end；而其他learning-based方法为了实现端到端就将hard correspondence换成了基于socre的soft correspondence(hard就是True or False，soft就是有权重，或者说点对匹配程度)，又会使得计算开销太大，并且引入大量噪声。
+
+作者就想实现hard correspondence的端到端，怎么办，采用single correspondence来预测变换就可以了，这样就没有random subsets，而是迭代遍历correspondence set，取最好预测结果。
+
+## Contribution
+
+1. 设计了Q-REG，一种结合single correspondence的local surface patches(fitting quadrics)，来估计位姿的点云配准方法，意图替代RANSAC。从介绍上，Q-REG与correspondence matching method 无关(*it is agnostic to the correspondence matching method*)，并且能够快速做outlier rejection by filtering degenerate solutions and assumption inconsistent motions (rigid poses inconsistent with motion priors (e.g., to avoid unrealistically large scaling).)
+2. 将Q-REG设计成可微(differentiable)方案，用于无论是在correspondence matching method 还是 pose estimation method的端到端训练
+3. 刷SOTA哩
+
+## Description
+
+employing **higher-order geometric information** , Q-REG achieving exhaustive search to replace RANSAC and improve the performance and run-time
+
+![Q-pipline](https://img2023.cnblogs.com/blog/3251700/202310/3251700-20231004210844663-1789846330.png)
+
+### First Step: Correspondence Matching
+
+使用任意Correspondence Matcher（e.g patch-based: PPFNet, PPF-FoldNet; full-conv: FCGF）得到feature-matching based putative correspondences $\{P, Q\}\in C$ , 用于之后的Q-REG方法预估变换矩阵。
+
+> Q-REG是single-correspondence方法，因此区别于RANSAC每次随机挑选三对corresponding point $\{p, q\}$ 预测变换矩阵，Q-REG每次只取单对corresponding point，用于estimate transform between $P$ and $Q$ 。
+
+### Second Step: Q-REG
+
+Q-REG直接当作工具用的步骤为：
+
+1. 从correspondence set $C$ 中迭代取出single correspondence $\{p,\ q \}$ ;
+2. 对以每个single corrspondence为输入预测变换矩阵
+3. 选择best transformation model 作为初步结果, the pose quality metric is calculated as the cardinality of its support i.e., the number of inliers.
+4. 之后根据论文[^ 1] 的方法进行local optimization.( *a local re-sampling and re-fitting of inlier correspondences based on their normals (coming from the fitted quadrics) and positions.* )
+
+如果嵌入端到端训练则只进行到第二步时根据预测结果构建Loss: $L_{pose}$ 。
+
+> 后文对single correspondence为输入预测变换矩阵的过程进行详述，以及介绍 $L_{pose}$ 的构成
+
+#### 1. Quadric Fitting based local patch
+
+对于single correspondence $\{p, q\}\in C$ ，可以为点划分local patch(Q-REG通过K=50的KNN来划分)，预测一对local patch，并计算两个loca patch彼此的LRF(local reference frame) $R_p, R_q \in SO(3)$ （即作为将点从世界坐标系转换到局部参考系的旋转矩阵）。假如预测正确，我们就可以做两片点云的对齐( $R=R_qR_p^T$ )。因此Q-REG应用二次曲面拟合来预估 $R_p,\ R_q$ 。
+
+> 至于translation vector $t$ ，论文直接以 q, p作为两片点云重叠区域的质心， $t=q-p$ 。
+
+论文中应用如下约束拟合3D quadric surface：
+$$
+\hat{p}^TQp=0
+$$
+
+-  $\hat{p}$ ：3D homogeneous point(3D齐次点) lying on the surface
+- Q is the quadirc parameters in matrix as: 
+
+$$
+Q = \begin{pmatrix}A&D&E&G\\D&B&F&H\\E&F&C&I\\G&H&I&J\end{pmatrix}
+$$
+
+> 理论上最佳的是local patch的所有点都能落在曲面上，但是当然不可能🤗，所以需要拟合。
+
+之后，作者重写了上述公式便于应用：
+
+![image-20231003214243387](https://img2023.cnblogs.com/blog/3251700/202310/3251700-20231004210845206-306722677.png)
+
+-  $|\mathcal{N}|$ is the number  of neighbors to which the quadric is fitted(paper sets to 50). 换句话说，二次曲面拟合不用single corrspondence 中的p，q点，也就是keypoints，而是使用local patch中的其他点，也就是neighbor points.
+-  $d_i$ 是第i个neighbor point离原点(the origin)的平方距离(squared dist)。（所以这里实现时是不是需要先对local patch以keypoint求相对距离进行标准化）。
+
+使用上述linear equation获得 $Q$ 中的系数。
+
+然后对求得二次曲面系数矩阵 $Q$ 应用平移，使得keypoint能落在曲面上，也就是调整系数 $J$ 使得对于keypoint，公式 $p^TQp =0$ 成立。
+
+最终取二次曲面系数矩阵 $Q$ 的部分，得到如下矩阵 $P$ ，并使用对矩阵 $P$ 使用 [Eigen-decomposition](https://zh.wikipedia.org/wiki/%E7%89%B9%E5%BE%81%E5%88%86%E8%A7%A3) ，得到特征向量矩阵 $V$ 作为求得LRF $R_p或R_q$ 。
+
+> 注意：为了保留尺度(scaling) 信息，这里不对特征向量进行单位化。
+
+![image-20231003220514908](https://img2023.cnblogs.com/blog/3251700/202310/3251700-20231004210845629-1397514021.png)
+
+#### 2. Estimate rigid Transformation
+
+the rotation $R=R_pPR_q^T \in SO(3)$ ，其中 $P$ 表示一个unknown permutation matrix，用于控制p的LRF与q的LRF之间的各轴对应关系，这种对应关系分三种情况考虑：
+
+1. **当LRF三轴的模（长度）各不相同时，也就是x-y-z三方向尺度信息都不一致。只需要按照三轴的长度从大到小排列对应即可** 。这种方式基于这样的假设：该过程建立在点云中没有或有但是可忽略的各向异性缩放的假设之上，因此相对应轴长度保持不变。这种方式可以实现scale-invariant，并且通过不可实现的缩放过滤不可靠匹配。因此，rigid transformation可以通过single correspondence解决。
+2. 当LRF三轴的模（长度）其中两个相同，与另一个不相同时，也就是x-y-z三方向有两个方向尺度信息一致，那么直观上就可以理解：两个方向尺度信息一致，使得一对一匹配LRF三轴时，有两对轴无法明确匹配。因此，需要最起码two correspondences来互相印证，保证 $P$ 矩阵预测正确。
+3. 当LRF三轴的模（长度）都相同，也就是x-y-z三方向尺度都一致，此时local patch以keypoint为原点接近一个sphere surface。同理，需要最起码three correspondences。
+
+所以为了实现estimate rigid transformation from a single correspondence，只保留 $C$ LRF三轴的模（长度）各不相同的corrspondences，各轴长度差都大于 $10^{-3}$ 。之后就可以用 $R=R_pPR_q^T$ 公式计算刚性旋转矩阵。
+
+#### 3. End-to-End Training Loss
+
+$$
+\epsilon (T_{p,q}) = \sqrt{\frac{1}{|C|}\sum_{(p_i,q_i) \in C}{||T_{p,q}p_i-q_i}||_2^2}
+$$
+
+$$
+L_{pose} = \sum_{(p,q)\in C}{(1-\frac{min(\epsilon(T_{p,q}), \gamma)}{\gamma} -s)}
+$$
+
+-  $\gamma$ is a threshold and $s$ is the score of the point correspondence predicted by the matching network
+
+上述所提到的 $L_{pose}$ 可以与其他广泛使用的registration loss functions 相结合实现从特征匹配到配准的端到端训练。
+
+## Experiments
+
+1. dataset：3DMatch、3DLoMatch；KITTI；ModelNet、ModelLoNet
+2. corresponding matcher：Predator、RegTR、GeoTr
+3. metrics：RR(registration recall)、RRE(registration rotation Error)、RTE(Registration Translation Error)、
+
+没说的，在matcher一致的情况下全SOTA，并且还比其他estimator(ICP、PointDesc……)好.消融实验也证明了Q-REG所有component都有效提升了一定的指标额度：quadric-fitting single-corresponding solver、local optimation、used in end-to-end training。
+
+<img src="https://img2023.cnblogs.com/blog/3251700/202310/3251700-20231004210841380-2119096328.png" alt="image-20231004210143215" style="zoom:50%;" />
+
+<img src="https://img2023.cnblogs.com/blog/3251700/202310/3251700-20231004211106427-883679264.png" alt="image-20231004210205332" style="zoom:50%;" />
+
+<img src="https://img2023.cnblogs.com/blog/3251700/202310/3251700-20231004210842066-2006740506.png" alt="image-20231004210231887" style="zoom:50%;" />
+
+<img src="https://img2023.cnblogs.com/blog/3251700/202310/3251700-20231004210842776-423995331.png" alt="image-20231004210306606" style="zoom:50%;" />
+
+## Run-time
+
+![image-20231004204314849](https://img2023.cnblogs.com/blog/3251700/202310/3251700-20231004210846062-1221308829.png)
+
+[^ 1]:Karel Lebeda, Jirı Matas, and Ondrej Chum. Fixing the locally optimized ransac-full experimental evaluation. In British machine vision conference. Citeseer, 2012. 5
