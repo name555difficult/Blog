@@ -13,6 +13,8 @@
 # 忽略"${filename}.assets"目录
 **/*.assets/
 
+asserts/
+
 # 忽略视频文件
 *.mp4
 *.mkv
